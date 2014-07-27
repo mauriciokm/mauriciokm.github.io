@@ -300,6 +300,18 @@ section#terra .background {
 
 
 @media (max-width: 767px) {
+	#foguete {
+		top: 200px;
+		right: 5%;
+		width: 70px;
+		transform:rotate(-25deg);
+		-ms-transform:rotate(-25deg); /* IE 9 */
+		-webkit-transform:rotate(-25deg);
+	}
+	#balao {
+		top: 850px;
+		width: 80px;
+	}
 	section#terra {
 		position: relative;
 	}

@@ -40,7 +40,7 @@
             </div>
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="#">Home</a>
                     </li>
                     <li><a href="#contato">Contato</a>
                     </li>
@@ -164,7 +164,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-4 foto">
-                                <img src="img/eu.jpg" class="wow flipInX" id="eu"></img>
+                                <img src="img/eu.jpg" id="eu"></img>
                             </div>
                             <div class="col-sm-4">
                                 <a class="contato" href="http://www.facebook.com/mauricio.matsuda" target="_blank"><img src="img/facebook.png" class="" id="facebook"></img>/mauricio.matsuda</a>
@@ -210,12 +210,38 @@
             </div>
         </section>
         <script>
-            $("a[rel^='prettyPhoto']").prettyPhoto({
-                theme: 'facebook',
-
-            });
+            
             var w = new WOW().init();
-            var s = skrollr.init();
+
+            $(function () {
+
+                var computer = function(){
+                    skrollr.init();
+                    $("a[rel^='prettyPhoto']").prettyPhoto({theme: 'facebook'});
+                }
+                var mobile = function(){
+                    skrollr.init().destroy();
+                    $("a[rel^='prettyPhoto']").attr('href', 'javascript: void(0)');
+                }
+                if ($(window).width() > 752) {
+                    computer();
+                } else {
+                    mobile();
+                }
+
+              $(window).on('resize', function () {
+                console.log($(window).width());
+                if ($(window).width() <= 752) {
+                    mobile();
+                } else {
+                    computer();
+                }
+              });
+
+              $('.navbar-nav a').click(function(){
+                $('.collapse').collapse('hide');
+              });
+            });
         </script>
     </div>
 </body>
