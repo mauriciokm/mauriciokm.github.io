@@ -10,6 +10,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
 
     <!-- Custom Google Web Font -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:100,700,400,300' rel='stylesheet' type='text/css'>
@@ -22,6 +23,7 @@
     
     <!-- JavaScript -->
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/skrollr.js"></script>
     <script src="js/wow.js"></script>
@@ -44,7 +46,7 @@
             </div>
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#galeria">Galeria</a>
+                    <li><a href="index.html">Home</a>
                     </li>
                     <li><a href="#contato">Contato</a>
                     </li>
@@ -52,6 +54,7 @@
             </div>
         </div>
     </nav>
+    <div id="skrollr-body">
     <section id="espaco">
         <div class="background">
             <img src="img/estrela.png" class="wow animated estrela" id="estrela1"></img>
@@ -60,8 +63,8 @@
             <img src="img/estrela.png" class="wow animated estrela" id="estrela4"></img>
             <img src="img/estrela.png" class="wow animated estrela" id="estrela5"></img>
             <img src="img/estrela.png" class="wow animated estrela" id="estrela6"></img>
-            <img src="img/foguete.png" class="skrollable skrollable-between" id="foguete" data-top="top:15%;right:5%;width:100px;transform:rotate(-20deg);" data--100-top="top:0%;right:25%;width:150px;transform:rotate(-60deg);"></img>
-            <img src="img/balao.png" class="skrollable skrollable-between" id="balao" data--80p-top="top:60%;left:0%;width:100px;transform:rotate(5deg);"  data--90p-top="top:55%;left:15%;width:130px;transform:rotate(0deg);" data--100p-top="top:50%;left:30%;width:140px;transform:rotate(-5deg);"></img>
+            <img src="img/foguete.png" class="skrollable skrollable-between" id="foguete" data-top="top:200px;right:5%;width:100px;transform:rotate(-20deg);" data--200-top="top:-10px;right:25%;width:150px;transform:rotate(-70deg);"></img>
+            <img src="img/balao.png" class="skrollable skrollable-between" id="balao" data--200-top="top:850px;left:2%;width:100px;transform:rotate(-2deg);"  data--400-top="top:810px;left:8%;width:110px;transform:rotate(2deg);" data--600-top="top:770px;left:1%;width:100px;transform:rotate(-2deg);" data--800-top="top:730px;left:6%;width:110px;transform:rotate(3deg);" data--1000-top="top:680px;left:3%;width:100px;transform:rotate(-1deg);"></img>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-xs-12">
@@ -71,57 +74,66 @@
                 <div class="row">
                     <div class="col-sm-4 col-xs-12">
                         <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
+                            <a href="img/galeria/dragao.jpg" rel="prettyPhoto[pp_gal]" title="Dragão"><img src="img/galeria/dragao_m.jpg"></img></a>
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-12">
                         <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
+                            <a href="img/galeria/batman.jpg" rel="prettyPhoto[pp_gal]" title="Batman"><img src="img/galeria/batman_m.jpg"></img></a>
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-12">
                         <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
+                            <a href="img/galeria/hello_kitty.jpg" rel="prettyPhoto[pp_gal]" title="Hello Kitty"><img src="img/galeria/hello_kitty_m.jpg"></img></a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 col-xs-12">
                         <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
+                            <a href="img/galeria/angry_bird.jpg" rel="prettyPhoto[pp_gal]" title="Angry Birds"><img src="img/galeria/angry_bird_m.jpg"></img></a>
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-12">
                         <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
+                            <a href="img/galeria/angry_bird_cenario.jpg" rel="prettyPhoto[pp_gal]" title="Angry Birds"><img src="img/galeria/angry_bird_cenario_m.jpg"></img></a>
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-12">
                         <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
+                            <a href="img/galeria/angry_bird_porco.jpg" rel="prettyPhoto[pp_gal]" title="Porquinho - Angry Birds"><img src="img/galeria/angry_bird_porco_m.jpg"></img></a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 col-xs-12">
                         <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
+                            <a href="img/galeria/calvin.jpg" rel="prettyPhoto[pp_gal]" title="Calvin"><img src="img/galeria/calvin_m.jpg"></img></a>
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-12">
                         <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
+                            <a href="img/galeria/doraemon.jpg" rel="prettyPhoto[pp_gal]" title="Doraemon"><img src="img/galeria/doraemon_m.jpg"></img></a>
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-12">
                         <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
+                            <a href="img/galeria/pikachu.jpg" rel="prettyPhoto[pp_gal]" title="Pikachu"><img src="img/galeria/pikachu_m.jpg"></img></a>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
+                            <a href="img/galeria/minion.jpg" rel="prettyPhoto[pp_gal]" title="Minion"><img src="img/galeria/minion_m.jpg"></img></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
+                            <a href="img/galeria/turma_da_monica.jpg" rel="prettyPhoto[pp_gal]" title="Turma da Mônica"><img src="img/galeria/turma_da_monica_m.jpg"></img></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
                     </div>
                 </div>
             </div>
@@ -153,7 +165,7 @@
                 <div id="contato">
                     <div class="row">
                         <div class="col-sm-4 foto">
-                            <img src="img/eu.jpg" class="" id="eu"></img>
+                            <img src="img/eu.jpg" class="wow flipInX" id="eu"></img>
                         </div>
                         <div class="col-sm-4">
                             <a class="contato" href="http://www.facebook.com/mauricio.matsuda" target="_blank"><img src="img/facebook.png" class="" id="facebook"></img>/mauricio.matsuda</a>
@@ -165,11 +177,9 @@
                         </div>
                     </div>
                 </div>
-            <div class="container">
-                <img src="img/pe_arvore.png" class="wow animated fadeInDown" id="pe-arvore"></img>
-                <img src="img/copa_arvore.png" class="wow animated fadeInDown" id="copa-arvore"></img>
-                <img src="img/casa.png" class="wow animated bounceInDown" id="casa"></img>
-            </div>
+            <img src="img/pe_arvore.png" class="wow fadeInDown" id="pe-arvore"></img>
+            <img src="img/copa_arvore.png" class="wow swing" id="copa-arvore"></img>
+            <img src="img/casa.png" class="wow rotateInUpRight" id="casa"></img>
             <div id="rodape">
                 <div id="grama">
                     <div class="grande"></div>
@@ -197,14 +207,17 @@
                     <div class="grande"></div>
                 </div>
             </div>
-            <div class="container">
-            </div>
         </div>
     </section>
     <script>
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            theme: 'facebook',
+
+        });
         var w = new WOW().init();
         var s = skrollr.init();
     </script>
+</div>
 </body>
 
 </html>
