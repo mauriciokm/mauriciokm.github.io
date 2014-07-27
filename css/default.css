@@ -1,6 +1,5 @@
 html, body{
 	height: 100%;
-	font-family: Roboto;
 }
 
 .navbar {
@@ -208,8 +207,6 @@ section#terra .background {
 	border-bottom-left-radius: 60px;
 }
 
-
-
 #grama {
 	overflow:hidden;
 	width: 100%;
@@ -311,4 +308,19 @@ section#terra .background {
 		position: relative;
 		height: 600px;
 	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .image {
+    height: 200px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .image {
+    height: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .image {
+    height: 300px;
+  }
 }
