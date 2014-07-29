@@ -348,6 +348,9 @@ section#terra .background {
 		height: 135px;
 	}
 
+	.row .row .col-sm-8 .image {
+  		height: 190px;
+  	}
 	.row .row .col-sm-6 .image {
 		height: 220px;
 	}
@@ -373,6 +376,9 @@ section#terra .background {
 		height: 180px;
 	}
 
+	.row .row .col-sm-8 .image {
+  		height: 250px;
+  	}
 	.row .row .col-sm-6 .image {
 		height: 220px;
 	}
