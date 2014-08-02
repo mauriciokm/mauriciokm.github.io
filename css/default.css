@@ -304,6 +304,9 @@ section#terra .background {
 
 
 @media (max-width: 767px) {
+	section#espaco h1 {
+		padding: 120px 10px;
+	}
 	.image {
 		padding-bottom: 8%;
 	}
