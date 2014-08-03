@@ -10,6 +10,21 @@ div.pp_default .pp_expand {
 	background: #000;
 	border: none;
 }
+
+.navbar img {
+	display: block;
+    -webkit-transition: opacity 1s;
+    opacity: 0; 
+    overflow: hidden;
+}
+.navbar.affix {
+	-webkit-transition: padding 1s;
+	padding: 10px 0;	
+}
+.navbar.affix img {
+	opacity: 1;
+}
+
 .navbar-default .navbar-nav>li>a {
 	color: #FFF;
 }
@@ -37,9 +52,12 @@ section#espaco .background {
 }
 
 section#espaco h1 {
-	color: #CCC;
-	padding: 120px;
-	vertical-align: middle;
+	display: none;
+}
+
+#logo {
+	margin: 70px auto 10px;
+	display: block;
 }
 
 .image {
@@ -304,9 +322,6 @@ section#terra .background {
 
 
 @media (max-width: 767px) {
-	section#espaco h1 {
-		padding: 120px 10px;
-	}
 	.image {
 		padding-bottom: 8%;
 	}
