@@ -350,6 +350,9 @@ section#terra .background {
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
+	.video {
+		display: none;
+	}
 	.row .col-sm-6 .image {
 		height: 300px;
 	}
@@ -378,6 +381,9 @@ section#terra .background {
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+	.video {
+		display: none;
+	}
 	.row .col-sm-6 .image {
 		height: 390px;
 	}
@@ -406,6 +412,9 @@ section#terra .background {
 	}
 }
 @media (min-width: 1200px) {
+	.video {
+		display: none;
+	}
 	.row .col-sm-6 .image {
 		height: 465px;
 	}
