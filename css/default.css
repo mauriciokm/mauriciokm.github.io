@@ -11,8 +11,9 @@ div.pp_default .pp_expand {
 	border: none;
 }
 
-.navbar img {
-	display: block;
+.navbar img,
+.navbar span  {
+	display: inline-block;
     -webkit-transition: opacity 1s;
     opacity: 0; 
     overflow: hidden;
@@ -21,7 +22,8 @@ div.pp_default .pp_expand {
 	-webkit-transition: padding 1s;
 	padding: 10px 0;	
 }
-.navbar.affix img {
+.navbar.affix img,
+.navbar.affix span {
 	opacity: 1;
 }
 
@@ -296,9 +298,9 @@ section#terra .background {
 	z-index: 1;
 }
 
-#contato h3,
 #contato .foto {
-	text-align: center;
+	margin-top: 20px;
+	text-align: right;
 }
 
 #contato #eu {
@@ -307,17 +309,33 @@ section#terra .background {
 	-webkit-animation-delay: 0.5s;
 }
 
-#contato a {
+#contato .contatos,
+#contato .contatos a {
 	font-size: 16px;
 	font-weight: 700;
-	display: block;
-	margin: 10px;
 	color: #333;
+	line-height: 28px;
 }
 
-#contato a img {
-	width: 40px;
-	margin-right: 5px;
+div.social {
+	position: fixed;
+	bottom: 50%;
+	right: 0;
+	width: 70px;
+	z-index: 10000;
+	padding-left: 5px;
+	background-color: #333;
+}
+
+div.social span.social {
+	color: #fff;
+	display: block;
+	padding: 5px;
+}
+
+div.social a.social img {
+	display: block;
+	padding-bottom: 5px;
 }
 
 
@@ -347,6 +365,27 @@ section#terra .background {
 	section#terra .background {
 		position: relative;
 		height: 600px;
+	}
+
+	div.social {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		z-index: 10000;
+	}
+
+	#contato .foto {
+		text-align: center;
+	}
+
+	div.social span.social {
+		display: inline-block;
+	}
+
+	div.social a.social img {
+		display: inline-block;
+		padding: 5px 0;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
