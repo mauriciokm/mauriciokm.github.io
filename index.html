@@ -6,11 +6,11 @@
     <meta name="description" content="Origami 3d, dobradura, papel">
     <meta name="author" content="">
     <title>Samurai de papel</title>
+    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
     <link rel="image_src" href="http://samuraidepapel.com.br/img/galeria/dragao_m_01.jpg" />
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type='text/css'>
-    <link href="css/animate.css" rel="stylesheet" type='text/css'>
     <link href="css/prettyPhoto.css" rel="stylesheet" type='text/css'>
 
     <!-- Add custom CSS here -->
@@ -20,13 +20,11 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/skrollr.js"></script>
-    <script src="js/wow.js"></script>
     
 </head>
 
 <body>
-    <nav data-spy="affix" data-offset-top="250" data-offset-bottom="200" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav data-spy="affix" data-offset-top="50" data-offset-bottom="50" class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -43,464 +41,116 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#">Home</a>
                     </li>
+                    <li><a href="galeria">Galeria</a>
+                    </li>
                     <li><a href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div id="skrollr-body">
-        <section id="espaco">
-            <div class="background">
-                <img src="img/estrela.png" class="wow estrela" id="estrela1"></img>
-                <img src="img/estrela.png" class="wow estrela" id="estrela2"></img>
-                <img src="img/estrela.png" class="wow estrela" id="estrela3"></img>
-                <img src="img/estrela.png" class="wow estrela" id="estrela4"></img>
-                <img src="img/estrela.png" class="wow estrela" id="estrela5"></img>
-                <img src="img/estrela.png" class="wow estrela" id="estrela6"></img>
-                <img src="img/foguete.png" class="skrollable skrollable-between" id="foguete" data-top="top:200px;right:5%;width:100px;transform:rotate(-20deg);" data--200-top="top:-10px;right:25%;width:150px;transform:rotate(-70deg);"></img>
-                <img src="img/balao.png" class="skrollable skrollable-between" id="balao" data--200-top="top:850px;left:2%;width:100px;transform:rotate(-2deg);"  data--400-top="top:810px;left:8%;width:110px;transform:rotate(2deg);" data--600-top="top:770px;left:1%;width:100px;transform:rotate(-2deg);" data--800-top="top:730px;left:6%;width:110px;transform:rotate(3deg);" data--1000-top="top:680px;left:3%;width:100px;transform:rotate(-1deg);"></img>
-                <div class="container">
-                    <h1>Samurai de papel</h1>
-                    <img src="img/logo.png" id="logo"></img>
-                    <div class="row video">
-                        <div class="col-sm-12 col-xs-12">
-                            <iframe width="100%" src="//www.youtube.com/embed/-Mz5pTcq4rU" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-xs-12">
-                            <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                <a href="http://youtu.be/-Mz5pTcq4rU" rel="prettyPhoto[turma_da_monica]" title="Turma da Mônica"><img src="img/galeria/mauricio_de_sousa_m_01.jpg"></img></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                <a href="img/galeria/mauricio_de_sousa_02.jpg" rel="prettyPhoto[turma_da_monica]" title="Turma da Mônica"><img src="img/galeria/mauricio_de_sousa_m_02.jpg"></img></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                <a href="img/galeria/mauricio_de_sousa_03.jpg" rel="prettyPhoto[turma_da_monica]" title="Turma da Mônica"><img src="img/galeria/mauricio_de_sousa_m_03.jpg"></img></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                <a href="img/galeria/mauricio_de_sousa_04.jpg" rel="prettyPhoto[turma_da_monica]" title="Turma da Mônica"><img src="img/galeria/mauricio_de_sousa_m_04.jpg"></img></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-6">
-                            <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                <a href="img/galeria/mauricio_de_sousa_05.jpg" rel="prettyPhoto[turma_da_monica]" title="Turma da Mônica"><img src="img/galeria/mauricio_de_sousa_m_05.jpg"></img></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-3 col-xs-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-xs-6">
-                                    <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                        <a href="img/galeria/turma_da_monica_02.jpg" rel="prettyPhoto[turma_da_monica]" title="Turma da Mônica"><img src="img/galeria/turma_da_monica_m_02.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-xs-6">
-                                    <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                        <a href="img/galeria/turma_da_monica_03.jpg" rel="prettyPhoto[turma_da_monica]" title="Turma da Mônica"><img src="img/galeria/turma_da_monica_m_03.jpg"></img></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-12">
-                            <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                <a href="img/galeria/turma_da_monica_01.jpg" rel="prettyPhoto[turma_da_monica]" title="Turma da Mônica"><img src="img/galeria/turma_da_monica_m_01.jpg"></img></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-xs-6">
-                                    <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                        <a href="img/galeria/turma_da_monica_04.jpg" rel="prettyPhoto[turma_da_monica]" title="Turma da Mônica"><img src="img/galeria/turma_da_monica_m_04.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-xs-6">
-                                    <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                        <a href="img/galeria/turma_da_monica_05.jpg" rel="prettyPhoto[turma_da_monica]" title="Turma da Mônica"><img src="img/galeria/turma_da_monica_m_05.jpg"></img></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="image">
-                                <a href="img/galeria/naruto_01.jpg" rel="prettyPhoto[naruto]" title="Naruto"><img src="img/galeria/naruto_m_01.jpg"></img></a>
-                                <a href="img/galeria/naruto_02.jpg" rel="prettyPhoto[naruto]" title="Naruto"></a>
-                                <a href="img/galeria/naruto_03.jpg" rel="prettyPhoto[naruto]" title="Naruto"></a>
-                                <a href="img/galeria/naruto_04.jpg" rel="prettyPhoto[naruto]" title="Naruto"></a>
-                                <a href="img/galeria/naruto_05.jpg" rel="prettyPhoto[naruto]" title="Naruto"></a>
-                                <a href="img/galeria/naruto_06.jpg" rel="prettyPhoto[naruto]" title="Naruto"></a>
-                                <a href="img/galeria/naruto_07.jpg" rel="prettyPhoto[naruto]" title="Naruto"></a>
-                                <a href="img/galeria/naruto_08.jpg" rel="prettyPhoto[naruto]" title="Naruto"></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="image">
-                                <a href="img/galeria/harry_potter_01.jpg" rel="prettyPhoto[harry_potter]" title="Harry Potter"><img src="img/galeria/harry_potter_m_01.jpg"></img></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="image">
-                                <a href="img/galeria/dragao_01.jpg" rel="prettyPhoto[dragao]" title="Dragão"><img src="img/galeria/dragao_m_01.jpg"></img></a>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-4 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/dragao_02.jpg" rel="prettyPhoto[dragao]" title="Dragão"><img src="img/galeria/dragao_m_02.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/dragao_03.jpg" rel="prettyPhoto[dragao]" title="Dragão"><img src="img/galeria/dragao_m_03.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/dragao_04.jpg" rel="prettyPhoto[dragao]" title="Dragão"><img src="img/galeria/dragao_m_04.jpg"></img></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-8" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="image">
-                                <a href="img/galeria/batman_01.jpg" rel="prettyPhoto[batman]" title="Batman"><img src="img/galeria/batman_m_01.jpg"></img></a>
-                            </div>
-                            <div class="row">
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-2 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="image">
-                                <a href="img/galeria/batman_02.jpg" rel="prettyPhoto[batman]" title="Batman"><img src="img/galeria/batman_m_02.jpg"></img></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-2 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="image">
-                                <a href="img/galeria/batman_03.jpg" rel="prettyPhoto[batman]" title="Batman"><img src="img/galeria/batman_m_03.jpg"></img></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-2 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="row">
-                                <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/hello_kitty_02.jpg" rel="prettyPhoto[hello_kitty]" title="Hello Kitty"><img src="img/galeria/hello_kitty_m_02.jpg"></img></a>
-                                    </div>
-                                </div><div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/hello_kitty_03.jpg" rel="prettyPhoto[hello_kitty]" title="Hello Kitty"><img src="img/galeria/hello_kitty_m_03.jpg"></img></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-4 col-xs-8" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="image">
-                                <a href="img/galeria/hello_kitty_01.jpg" rel="prettyPhoto[hello_kitty]" title="Hello Kitty"><img src="img/galeria/hello_kitty_m_01.jpg"></img></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="row">
-                                <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image portrait">
-                                        <a href="img/galeria/angry_bird_02.jpg" rel="prettyPhoto[angry_bird]" title="Angry Birds"><img src="img/galeria/angry_bird_m_02.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/angry_bird_03.jpg" rel="prettyPhoto[angry_bird]" title="Angry Birds"><img src="img/galeria/angry_bird_m_03.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image portrait">
-                                        <a href="img/galeria/angry_bird_04.jpg" rel="prettyPhoto[angry_bird]" title="Angry Birds"><img src="img/galeria/angry_bird_m_04.jpg"></img></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-8" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="image">
-                                <a href="img/galeria/angry_bird_01.jpg" rel="prettyPhoto[angry_bird]" title="Angry Birds"><img src="img/galeria/angry_bird_m_01.jpg"></img></a>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-4 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/angry_bird_07.jpg" rel="prettyPhoto[angry_bird]" title="Angry Birds"><img src="img/galeria/angry_bird_m_07.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/angry_bird_08.jpg" rel="prettyPhoto[angry_bird]" title="Angry Birds"><img src="img/galeria/angry_bird_m_08.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/angry_bird_09.jpg" rel="prettyPhoto[angry_bird]" title="Angry Birds"><img src="img/galeria/angry_bird_m_09.jpg"></img></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-8" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="row">
-                                <div class="col-sm-6 col-xs-6" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/angry_bird_06.jpg" rel="prettyPhoto[angry_bird]" title="Angry Birds"><img src="img/galeria/angry_bird_m_06.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-xs-6" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/angry_bird_12.jpg" rel="prettyPhoto[angry_bird]" title="Angry Birds"><img src="img/galeria/angry_bird_m_12.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/angry_bird_05.jpg" rel="prettyPhoto[pp_gal]" title="Porquinho - Angry Birds"><img src="img/galeria/angry_bird_m_05.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/angry_bird_10.jpg" rel="prettyPhoto[angry_bird]" title="Angry Birds"><img src="img/galeria/angry_bird_m_10.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/angry_bird_11.jpg" rel="prettyPhoto[angry_bird]" title="Angry Birds"><img src="img/galeria/angry_bird_m_11.jpg"></img></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="row">
-                                <div class="col-sm-8 col-xs-8" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/calvin_01.jpg" rel="prettyPhoto[calvin]" title="Calvin"><img src="img/galeria/calvin_m_01.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                            <div class="image">
-                                                <a href="img/galeria/calvin_02.jpg" rel="prettyPhoto[calvin]" title="Calvin"><img src="img/galeria/calvin_m_02.jpg"></img></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                            <div class="image">
-                                                <a href="img/galeria/calvin_03.jpg" rel="prettyPhoto[calvin]" title="Calvin"><img src="img/galeria/calvin_m_03.jpg"></img></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="row">
-                                <div class="col-sm-4 col-xs-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                            <div class="image">
-                                                <a href="img/galeria/minion_02.jpg" rel="prettyPhoto[minion]" title="Minion"><img src="img/galeria/minion_m_02.jpg"></img></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                            <div class="image">
-                                                <a href="img/galeria/minion_03.jpg" rel="prettyPhoto[minion]" title="Minion"><img src="img/galeria/minion_m_03.jpg"></img></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-8 col-xs-8">
-                                    <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                        <a href="img/galeria/minion_01.jpg" rel="prettyPhoto[minion]" title="Minion"><img src="img/galeria/minion_m_01.jpg"></img></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="row">
-                                <div class="col-sm-4 col-sm-push-0 col-xs-4 col-xs-push-8" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                            <div class="image">
-                                                <a href="img/galeria/pikachu_02.jpg" rel="prettyPhoto[pikachu]" title="Pikachu"><img src="img/galeria/pikachu_m_02.jpg"></img></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                            <div class="image">
-                                                <a href="img/galeria/pikachu_03.jpg" rel="prettyPhoto[pikachu]" title="Pikachu"><img src="img/galeria/pikachu_m_03.jpg"></img></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-8 col-sm-pull-0 col-xs-8 col-xs-pull-4">
-                                    <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                        <a href="img/galeria/pikachu_01.jpg" rel="prettyPhoto[pikachu]" title="Pikachu"><img src="img/galeria/pikachu_m_01.jpg"></img></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                            <div class="row">
-                                <div class="col-sm-8 col-sm-push-0 col-xs-8 col-xs-push-4" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="image">
-                                        <a href="img/galeria/doraemon_01.jpg" rel="prettyPhoto[doraemon]" title="Doraemon"><img src="img/galeria/doraemon_m_01.jpg"></img></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-sm-pull-0 col-xs-4 col-xs-pull-8" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                            <div class="image">
-                                                <a href="img/galeria/doraemon_02.jpg" rel="prettyPhoto[doraemon]" title="Doraemon"><img src="img/galeria/doraemon_m_02.jpg"></img></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-xs-12" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                            <div class="image">
-                                                <a href="img/galeria/doraemon_03.jpg" rel="prettyPhoto[doraemon]" title="Doraemon"><img src="img/galeria/doraemon_m_03.jpg"></img></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="row">
-                        <div class="col-sm-6 col-xs-12">
-                            <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                <a href="img/galeria/gdg_01.jpg" rel="prettyPhoto[gdg]" title="Google Developer Groups (GDG)"><img src="img/galeria/gdg_m_01.jpg"></img></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xs-12">
-                            <div class="image" data-top-bottom="opacity:0" data-center="opacity:1" data-bottom-top="opacity:0">
-                                <a href="img/galeria/gdg_02.jpg" rel="prettyPhoto[gdg]" title="Google Developer Groups (GDG)"><img src="img/galeria/gdg_m_02.jpg"></img></a>
-                            </div>
-                        </div>
-                </div>
+    <header>
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>Aqui a sua imaginação vira realidade</h1>
             </div>
-        </section>
-        <section id="terra">
-            <div class="background">
-                <div id="nuvem">
-                    <div class="grande"></div>
-                    <div class="grande"></div>
-                    <div class="pequeno"></div>
-                    <div class="pequeno"></div>
-                    <div class="grande"></div>
-                    <div class="pequeno"></div>
-                    <div class="grande"></div>
-                    <div class="pequeno"></div>
-                    <div class="pequeno"></div>
-                    <div class=""></div>
-                    <div class="pequeno"></div>
-                    <div class="grande"></div>
-                    <div class=""></div>
-                    <div class="grande"></div>
-                    <div class="pequeno"></div>
-                    <div class=""></div>
-                    <div class="pequeno"></div>
-                    <div class="grande"></div>
-                    <div class="grande"></div>
-                </div>
-                    <div id="contato">
-                        <div class="row">
-                            <div class="col-sm-3 foto">
-                                <img src="img/eu.jpg" id="eu"></img>
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>Tem alguma ideia que gostaria de ver feita em origami? Vamos conversar!</h3>
-                                <div class="contatos">
-                                    <a href="mailto:&#109;&#097;&#117;&#114;&#105;&#099;&#105;&#111;&#109;&#097;&#116;&#115;&#117;&#100;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">mauriciomatsuda@gmail.com</a>
-                                    <br />
-                                    (15) 997 057 664
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <img src="img/pe_arvore.png" class="wow bounceInUp" id="pe-arvore"></img>
-                <img src="img/copa_arvore.png" class="wow swing" id="copa-arvore"></img>
-                <img src="img/sol.png" class="wow rotateIn" id="sol"></img>
-                <img src="img/casa.png" class="" id="casa"></img>
-                <div id="rodape">
-                    <div id="grama">
-                        <div class="grande"></div>
-                        <div class="grande"></div>
-                        <div class="pequeno"></div>
-                        <div class="pequeno"></div>
-                        <div class=""></div>
-                        <div class="pequeno"></div>
-                        <div class="grande"></div>
-                        <div class="grande"></div>
-                        <div class="pequeno"></div>
-                        <div class="grande"></div>
-                        <div class="pequeno"></div>
-                        <div class="pequeno"></div>
-                        <div class=""></div>
-                        <div class="pequeno"></div>
-                        <div class="pequeno"></div>
-                        <div class=""></div>
-                        <div class="pequeno"></div>
-                        <div class="grande"></div>
-                        <div class="grande"></div>
-                        <div class="pequeno"></div
-                        <div class="grande"></div>
-                        <div class=""></div>
-                        <div class="grande"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="social">
-            <span class="social">Me siga!</span>
-            <a class="social" href="https://www.facebook.com/pages/Samurai-de-Papel/1517269588508100" target="_blank"><img src="img/facebook-branco.png" id="facebook"></img></a>
-            <a class="social" href="http://instagram.com/samuraidepapel?ref=badge" target="_blank"><img src="img/instagram-branco.png" alt="Instagram" id="instagram" /></a>
         </div>
-        <script>
-            
-            var w = new WOW().init();
-
-            $(function () {
-
-                var computer = function(){
-                    skrollr.init();
-                    $("a[rel^='prettyPhoto']").prettyPhoto();
-                }
-                var mobile = function(){
-                    skrollr.init().destroy();
-                    $("a[rel^='prettyPhoto']").attr('href', 'javascript: void(0)');
-                }
-                if ($(window).width() > 752) {
-                    computer();
-                } else {
-                    mobile();
-                }
-
-              $(window).on('resize', function () {
-                console.log($(window).width());
-                if ($(window).width() <= 752) {
-                    mobile();
-                } else {
-                    computer();
-                }
-              });
-
-              $('.navbar-nav a').click(function(){
-                $('.collapse').collapse('hide');
-              });
-            });
-        </script>
+    </header>
+    <section id="destaque">
+        <h2>Algumas de minhas criações...</h2>
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <div class="image">
+                    <img src="img/galeria/mauricio-de-sousa-m-01.jpg"></img>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="image">
+                    <img src="img/galeria/batman-m-01.jpg"></img>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="image">
+                    <img src="img/galeria/angry-bird-m-01.jpg"></img>
+                </div>
+            </div>
+        </div>
+        <div class="call-to-action">
+            <a href="galeria" class="btn btn-success btn-lg">Veja mais na galeria...</a>
+        </div>
+    </section>
+    <section id="contato">
+        <h2>Quer falar comigo? Deixe uma mensagem!</h2>
+        <div class="row">
+            <div class="col-lg-3 col-sm-2 col-xs-12 foto">
+                <img src="img/eu.jpg"></img>
+            </div>
+            <div class="col-lg-4 col-lg-push-3 col-sm-6 col-sm-push-4 col-xs-12">
+                <form action="//forms.brace.io/mauriciomatsuda@gmail.com">
+                    <input type="hidden" name="_next" value="//samuraidepapel.com.br" />
+                    <div class="form-group">
+                        <input type="text" class="form-control"  name="nome" placeHolder="Nome"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control"  name="_replyto" placeHolder="E-mail"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control"  name="_subject" placeHolder="Assunto"/>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control"  name="message" placeHolder="Mensagem" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Enviar</button>
+                </form>
+            </div>  
+            <div class="col-lg-3 col-lg-pull-4 col-sm-4 col-sm-pull-6 col-xs-12">
+                <div class="contatos">
+                    <a href="mailto:&#109;&#097;&#117;&#114;&#105;&#099;&#105;&#111;&#109;&#097;&#116;&#115;&#117;&#100;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">mauriciomatsuda@gmail.com</a>
+                    <br />
+                    (15) 997 057 664
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="social">
+        <span class="social">Me siga!</span>
+        <a class="social" href="https://www.facebook.com/pages/Samurai-de-Papel/1517269588508100" target="_blank"><img src="img/facebook.png" id="facebook"></img></a>
+        <a class="social" href="http://instagram.com/samuraidepapel?ref=badge" target="_blank"><img src="img/instagram.png" alt="Instagram" id="instagram" /></a>
     </div>
+    <script>
+        
+        var w = new WOW().init();
+
+        $(function () {
+
+            var computer = function(){
+                skrollr.init();
+                $("a[rel^='prettyPhoto']").prettyPhoto();
+            }
+            var mobile = function(){
+                skrollr.init().destroy();
+                $("a[rel^='prettyPhoto']").attr('href', 'javascript: void(0)');
+            }
+            if ($(window).width() > 752) {
+                computer();
+            } else {
+                mobile();
+            }
+
+          $(window).on('resize', function () {
+            console.log($(window).width());
+            if ($(window).width() <= 752) {
+                mobile();
+            } else {
+                computer();
+            }
+          });
+
+          $('.navbar-nav a').click(function(){
+            $('.collapse').collapse('hide');
+          });
+        });
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
