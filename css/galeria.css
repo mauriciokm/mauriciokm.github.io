@@ -24,6 +24,11 @@
 	width: 100%;
 }
 
+@media (max-width: 992px) {
+	div.samurai .pp_next{background:url(../images/prettyPhoto/samurai/btnNext.png) center right no-repeat;cursor:pointer}
+	div.samurai .pp_previous{background:url(../images/prettyPhoto/samurai/btnPrevious.png) center left no-repeat;cursor:pointer}
+}
+
 @media (min-width: 992px) {
 	#galeria {
 		padding: 60px;
@@ -32,6 +37,10 @@
 	.image {
 		margin-top: 15px;
 		margin-bottom: 15px;
+	}
+
+	.pp_gallery {
+		display: block;
 	}
 }
 
@@ -58,6 +67,3 @@ div.samurai .pp_arrow_previous.disabled{background-position:0 -87px;cursor:defau
 div.samurai .pp_arrow_next.disabled{background-position:-22px -87px;cursor:default}
 div.samurai .pp_loaderIcon{background:url(../images/prettyPhoto/samurai/loader.gif) center center no-repeat}
 
-.pp_gallery {
-	display: block;
-}
