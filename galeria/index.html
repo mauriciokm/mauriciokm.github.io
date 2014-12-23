@@ -272,25 +272,49 @@
     </div>
     <script>
         $(function () {
-            var computer = function(){
-                $("a[rel^='prettyPhoto']").prettyPhoto();
-            }
-            var mobile = function(){
-                $("a[rel^='prettyPhoto']").attr('href', 'javascript: void(0)');
-            }
-            if ($(window).width() > 752) {
-                computer();
-            } else {
-                mobile();
-            }
-
-          $(window).on('resize', function () {
-            if ($(window).width() <= 752) {
-                mobile();
-            } else {
-                computer();
-            }
-          });
+            $("a[rel^='prettyPhoto']").prettyPhoto({
+                theme: "samurai",
+                social_tools: false,
+                markup: '<div class="pp_pic_holder"> \
+                            <div class="ppt">&nbsp;</div> \
+                            <div class="pp_top"> \
+                                <div class="pp_left"></div> \
+                                <div class="pp_middle"></div> \
+                                <div class="pp_right"></div> \
+                                <a class="pp_close" href="#">Close</a> \
+                            </div> \
+                            <div class="pp_content_container"> \
+                                <div class="pp_left"> \
+                                <div class="pp_right"> \
+                                    <div class="pp_content"> \
+                                        <div class="pp_loaderIcon"></div> \
+                                        <div class="pp_fade"> \
+                                            <a href="#" class="pp_expand" title="Expand the image">Expand</a> \
+                                            <div class="pp_hoverContainer"> \
+                                                <a class="pp_next" href="#">next</a> \
+                                                <a class="pp_previous" href="#">previous</a> \
+                                            </div> \
+                                            <div id="pp_full_res"></div> \
+                                            <div class="pp_details"> \
+                                                <div class="pp_nav"> \
+                                                    <p class="currentTextHolder">0/0</p> \
+                                                </div> \
+                                                <p class="pp_description"></p> \
+                                                {pp_social} \
+                                            </div> \
+                                        </div> \
+                                    </div> \
+                                </div> \
+                                </div> \
+                            </div> \
+                            <div class="pp_bottom"> \
+                                <div class="pp_left"></div> \
+                                <div class="pp_middle"></div> \
+                                <div class="pp_right"></div> \
+                            </div> \
+                        </div> \
+                        <div class="pp_overlay"></div>',
+            });
 
           $('.navbar-nav a').click(function(){
             $('.collapse').collapse('hide');
