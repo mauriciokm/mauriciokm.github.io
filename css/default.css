@@ -43,8 +43,9 @@ header {
 	vertical-align: middle;
 	text-align: center;
 	width: 100%;
-	background: url(../img/galeria/angry-bird-01.jpg) no-repeat;
+	background: url(../img/galeria/angry-bird-banner-mobile.jpg) no-repeat;
 	background-size: cover;
+	background-position: 0 -20px;
 	padding: 100px 20px 0;
 }
 
@@ -185,11 +186,12 @@ div.social a.social img {
 
 	header {
 		padding: 100px 60px;
-		height: 500px;
-		background-position: 0 0px;
 		font-size: 2em;
-		background-position: 0 -140px;
 		height: 600px;
+		background: url(../img/galeria/angry-bird-01.jpg) no-repeat;
+		background-size: cover;
+		background-position: 0 -140px;
+		width: 100%;
 	}
 
 	header h1 {
@@ -251,7 +253,6 @@ div.social a.social img {
 
 @media (min-width: 1199px) {
 	header {
-		background-position: 0 -140px;
 		height: 700px;
 	}
 }
