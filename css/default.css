@@ -149,6 +149,35 @@ header h1 {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 .ig-b-v-24 { background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }
 
+#share {
+	padding: 20px;
+	background: #2185C5;
+	color: #fff;
+}
+
+#share h2 {
+	padding-top: 40px;
+}
+
+#share .row > div {
+	padding: 20px;
+}
+
+#share .thumb {
+	padding: 20px;
+	background: #fff;
+}
+
+#share .thumb img {
+	width: 100%;
+}
+
+#share .thumb p {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+
 div.social a.social img {
 	
 }
@@ -271,6 +300,10 @@ div.social a.social img {
 
 	#social #instagram-board {
 		width: 80%;
+	}
+
+	#share {
+		padding: 60px;
 	}
 
 	div.social {
