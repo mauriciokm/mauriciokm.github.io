@@ -223,6 +223,7 @@ header h1 {
 
 #share .thumb img {
 	width: 100%;
+	cursor: pointer;
 }
 
 #share .thumb p {
