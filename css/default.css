@@ -159,6 +159,11 @@ header h1 {
 	font-weight: bold;
 }
 
+#contato .alert {
+	padding: 11px;
+	margin-right: 95px;
+}
+
 #social {
 	padding: 20px 20px 80px;
 	background: #fff;
@@ -459,10 +464,6 @@ div.social a.social img {
 
 	#contato textarea {
 		height: auto;
-	}
-
-	#social #instagram-board {
-		width: 80%;
 	}
 
 	#share, #about {

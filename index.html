@@ -103,23 +103,24 @@
                 <img src="img/eu.jpg"></img>
             </div>
             <div class="col-lg-4 col-lg-push-3 col-sm-6 col-sm-push-4 col-xs-12">
-                <form method="POST" action="//formspree.io/mauriciomatsuda@gmail.com">
+                <form id="contact-form" method="POST" action="//formspree.io/mauriciomatsuda@gmail.com">
                     <input type="hidden" name="_next" value="//samuraidepapel.com.br" />
+                    <input type="hidden" id="subject" name="_subject" value="" />
                     <div class="form-group">
-                        <input type="text" class="form-control"  name="nome" placeHolder="Nome"/>
+                        <input type="text" class="form-control" id="nome"  name="nome" placeHolder="Nome"/>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control"  name="_replyto" placeHolder="E-mail"/>
+                        <input type="email" class="form-control" id="email"  name="_replyto" placeHolder="E-mail"/>
                     </div>
                     <div class="form-group">
-                        <select class="form-control"  name="_subject">
+                        <select class="form-control" id="assunto">
                           <option value="contato">Contato</option>
                           <option value="orcamento">Orçamento</option>
                           <option value="sugestao">Sugestão</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control"  name="message" placeHolder="Mensagem" rows="5"></textarea>
+                        <textarea class="form-control" id="mensagem" name="message" placeHolder="Mensagem" rows="5"></textarea>
                     </div>
                     <button type="submit" class="btn btn-default">Enviar</button>
                 </form>
@@ -184,6 +185,34 @@
           $('.navbar-nav a').click(function(){
             $('.collapse').collapse('hide');
           });
+
+            var $contactForm = $('#contact-form');
+            $contactForm.submit(function(e) {
+                e.preventDefault();
+                if($('#nome').val() == '' && $('#email').val() == '' && $('#mensagem').val() == '') {
+                    $contactForm.append('<div class="alert alert-danger">Preencha todos os campos.</div>');
+                } else {
+                    $('#subject').val($('#assunto').val() + ' ' + $('#nome').val());
+                    $.ajax({
+                        url: '//formspree.io/mauriciomatsuda@gmail.com',
+                        method: 'POST',
+                        data: $(this).serialize(),
+                        dataType: 'json',
+                        beforeSend: function() {
+                            $contactForm.find('.alert').hide();
+                            $contactForm.append('<div class="alert alert-warning">Enviando e-mail…</div>');
+                        },
+                        success: function(data) {
+                            $contactForm.find('.alert-warning').hide();
+                            $contactForm.append('<div class="alert alert-success">E-mail enviado!</div>');
+                        },
+                        error: function(err) {
+                            $contactForm.find('.alert-warning').hide();
+                            $contactForm.append('<div class="alert alert-danger">Falha no envio do e-mail.</div>');
+                        }
+                    });
+                }
+            });
         });
     </script>
     <script>
