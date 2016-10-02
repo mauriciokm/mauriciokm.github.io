@@ -192,7 +192,7 @@
                 if($('#nome').val() == '' && $('#email').val() == '' && $('#mensagem').val() == '') {
                     $contactForm.append('<div class="alert alert-danger">Preencha todos os campos.</div>');
                 } else {
-                    $('#subject').val($('#assunto').val() + ' ' + $('#nome').val());
+                    $('#subject').val($("#assunto option:selected").text() + ' - ' + $('#nome').val());
                     $.ajax({
                         url: '//formspree.io/mauriciomatsuda@gmail.com',
                         method: 'POST',
