@@ -82,17 +82,26 @@ header {
 	vertical-align: middle;
 	text-align: center;
 	width: 100%;
-	background: url(../img/galeria/angry-bird-banner-mobile.jpg) no-repeat;
+	background: url(../img/galeria/meninas-super-poderosas-mobile.jpg) no-repeat;
 	background-size: cover;
-	background-position: 0 -20px;
+	background-position: 0px 0px;
 	padding: 100px 20px 0;
+}
+
+header div.transbox {
+    margin: 140px 0 30px;
+    background-color: #000000;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    padding: 10px;
+    width: auto;
 }
 
 header h1 {
 	color: #fff;
 	font-size: 3em;
-	text-align: left;
-	text-shadow: 2px 2px #333;
+	text-transform: uppercase;
+	font-weight: 100;
 }
 
 #destaque {
@@ -406,12 +415,15 @@ div.social a.social img {
 		padding: 100px 60px;
 		font-size: 2em;
 		height: 600px;
-		background: url(../img/galeria/angry-bird-01.jpg) no-repeat;
+		background: url(../img/galeria/meninas-super-poderosas-01.jpg) no-repeat;
 		background-size: cover;
-		background-position: 0 -140px;
+		background-position: 0 0;
 		width: 100%;
 	}
 
+	header div.transbox {
+		margin-top: 250px;
+	}
 	header h1 {
 		font-size: 2em;
 	}
